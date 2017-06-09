@@ -1,0 +1,62 @@
+<DOCTYPE html>
+<html lang ="en">
+<header>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</header>
+
+<body>
+  <div id="About">
+    <h3>What does this page do?</h3>
+    <p>This is the reporting page - people fill in information to report a hazard near them</p>
+    <h3>What do we need for this page to work?</h3>
+    <p>There are a few things we need:
+      <ul>
+        <li>Form inputs using pre-saved information OR new inputs, including complex inputs such as a map location selector.</li>
+        <li>The form information will be pulled from a table in a db, each user will probably have a table? - Look into database structure best professional practices</li>
+        <li>The form submission will insert a new entry into a table in a db (using PHP?) - the same DB reports are pulled from on the status page</li>
+        <li>The form submission will lead to another report page, prompting for more information if the user is in a position to provide it.</li>
+      </ul>
+    </p>
+  </div>
+  <div id="Report"
+    <hr>
+    <h1>Report a Hazard:</h1>
+    <p>If you are in immediate danger, please call 000 immediately for assistance</p>
+    <form action="sendtoreportdatabase.php" method="post">
+    <!-- Make sure the form is secure!!!!!!!!!!!-->
+    <section id="hazardtype">
+      <h2>What is the hazard?</h2>
+      <input type="radio">Fire</input>
+      <input type="radio">Blocked Road</input>
+      <input type="radio">Fallen Power Line</input>
+      <input type="radio">Car Accident</input>
+      <input type="text" name="miscHazard" value="Other - Please Specify">
+    </section>
+    <section id="hazardlocation">
+      <h2>Where did you see this hazard?</h2>
+      <input type="radio">Saved Location 1</input> <!--Saved Locations should be pulled from db - they need a name and an address or coordinates -->
+      <input type="radio">Saved Location 2</input>
+      <input type="radio">Saved Location 3</input>
+      <input type="radio">Current Location</input>
+      <input type="text" name="otherLocation" value="Other - Please Specify"> <!--A new location insert here will be very difficult to implement I suspect - may require address only -->
+    </section>
+    <section id="hazardsafety">
+      <h2>Are you in danger?</h2> <!-- defines which page users are sent to next -->
+      <input type="radio">Yes</input>
+      <input type="radio">No</input>
+      <input type="radio">I'm Not Sure</input>
+      <br><br><br>
+    </section>
+    <section id="submit">
+      <input type="submit" value="Report"> <!-- make this biiiiig -->
+    </section>
+  </form>
+  </div>
+</body>
