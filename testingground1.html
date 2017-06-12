@@ -142,22 +142,56 @@ input:checked + label {
     <input id="tab3" type="radio" name="tabs">
     <label for="tab3"> Locations</label>
 
-    <input id="tab4" type="radio" name="tabs">
-    <label for="tab4"> Fire Preparation</label>
-
-    <input id="tab5" type="radio" name="tabs">
-    <label for="tab5"> Evacuation Plan</label>
-
-    <input id="tab6" type="radio" name="tabs">
-    <label for="tab6"> Stay and Defend Plan</label>
 
     <section id="content1">
-      <p>
-        In here, should be family members accounts - linked by a table with userIDs (unique). This is not necessarily reciprocal. Should we have a search function to find a user?
-      </p>
-      <p>
-        There should also be options to notify these people in case of a report, and whether they wish to share their location with them.
-      </p>
+      <div>
+
+        <form action="sendtouserinfodatabase.php" method="post">
+            <p>
+            Username:
+            <input
+              type="text"
+              name="username"
+              value="<phpgetfromdb>"
+            ><br>
+            Password
+            <input
+              type="password"
+              name="password"
+              value="<phpgetfromdb>"
+            ><br>
+            Contact Email
+            <input
+              type="email"
+              name="email"
+              value="<phpgetfromdb@mail.com>"
+            ><br>
+            First Name:
+            <input
+              type="text"
+              name="fname"
+              value="<phpgetfromdb>"
+            ><br>
+            Last Name:
+            <input
+              type="text"
+              name="lname"
+              value="<phpgetfromdb>"
+            ><br>
+            Contact Number:
+            <input
+              type="tel"
+              name="contactnumber"
+              value="<phpgetfromdb>"
+            ><br>
+            <input
+              type="submit"
+              name="submit"
+              value="Save Details"
+            >
+          </section>
+        </form>
+      </div>
     </section>
 
     <section id="content2">
@@ -169,23 +203,6 @@ input:checked + label {
     <section id="content3">
       <p>
         Here should be a map plugin for saving locations (with search?), as well as a list of saved locations. Possibly some method of linking contacts/family to saved locations?
-      </p>
-    </section>
-
-    <section id="content4">
-      <p>
-        Here just requires a simple editable text box, with some sort of small tutorial for things to consider (e.g. Common things people write in here are "clean the gutters, clear fallen trees, fill the water tank etc.")
-        The text should send to a table for the user upon submitting.
-      </p>
-    </section>
-    <section id="content5">
-      <p>
-        Here requires a simple editable text box as in fire prep, with suggestions and sending to a table method again.
-      </p>
-    </section>
-    <section id="content6">
-      <p>
-        Here requires a simple editable text box as in fire prep, with suggestions and sending to a table method again. Perhaps include a warning of the dangers of staying and defending if you're unprepared?
       </p>
     </section>
   </div>

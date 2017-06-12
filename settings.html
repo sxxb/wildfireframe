@@ -15,5 +15,59 @@
 </header>
 
 <body>
-
+  <h1>Settings</h1>
+  <p>This page should contain the user's settings in a form style input that allows them to change the inputs.
+  </p>
+  <form action="sendtouserinfodatabase.php" method="post">
+    <section id="User Information">
+      <p>
+      Username:
+      <input
+        type="text"
+        name="username"
+        value="<phpgetfromdb>"
+      ><br>
+      Password
+      <input
+        type="password"
+        name="password"
+        value="<phpgetfromdb>"
+      ><br>
+      Contact Email
+      <input
+        type="email"
+        name="email"
+        value="<phpgetfromdb@mail.com>"
+      ><br>
+      First Name:
+      <input
+        type="text"
+        name="fname"
+        value="<phpgetfromdb>"
+      ><br>
+      Last Name:
+      <input
+        type="text"
+        name="lname"
+        value="<phpgetfromdb>"
+      ><br>
+      Contact Number:
+      <input
+        type="tel"
+        name="contactnumber"
+        value="<phpgetfromdb>"
+      ><br>
+      <input
+        type="submit"
+        name="submit"
+        value="Save Details"
+      >
+    </section>
+    </section>
+    <section id="Privacy Settings">
+      <p>Toggle location tracking on/off <br>
+      <p>Set location sharing settings - off/family/public</p>
+      <p>Set
+    </section>
+  </form>
 </body>

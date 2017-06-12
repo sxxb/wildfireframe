@@ -76,6 +76,7 @@ Features
     Quizzes based on fire safety tbc
     Progress bar
     Comparison vs Other Communities
+
   Settings
     Username
     Email
@@ -83,12 +84,36 @@ Features
     Password
     Visibility/Location Settings
     Privacy Settings
+
   Help
     Videos of how to do things
     Text explanations of what things do
     Background information about resources etc.
+
   About
     Disclaimers
     Licenses etc.
     Terms of Use
     Any other legal stuff that might come up
+
+Styles
+  Bootstrap?
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  Font Awesome
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  Fonts
+    
+
+
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+  @import url('https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css');
