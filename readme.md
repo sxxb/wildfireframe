@@ -55,7 +55,7 @@ Features
       ABC Emergency Radio Feed?
 
   Plan
-    Collapsable Menu:
+    Tabs:
       Family Locations (Last known location or tracked location
         Icon fa-child"\f1ae"
       Contact List (Saved contacts + Common emergency/bushfire contact numbers)
@@ -91,6 +91,10 @@ Features
     Background information about resources etc.
 
   About
+    About Wildfire (do the whole UI/pitchdeck thing)
+    About Us
+
+  Legal
     Disclaimers
     Licenses etc.
     Terms of Use
@@ -111,7 +115,7 @@ Styles
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   Fonts
-    
+
 
 
   <style>

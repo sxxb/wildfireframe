@@ -1,0 +1,416 @@
+
+<html lang ="en">
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<!--Font Awesome-->
+  <link href="https://use.fontawesome.com/dfa807e4eb.css" media="all" rel="stylesheet">
+<!--TypeKit Fonts-->
+  <!--TBA-->
+
+  <style>
+
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+
+  /**Background Image**/
+  background-image: url(/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/Wildfire-Background-Test.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #71dad7;
+  background-blend-mode:overlay;
+  /**End Background**/
+
+}
+
+
+
+/** From here ... **/
+.standard-button {
+  width:85%;
+  height:25vw;
+  border: 1.6vw solid #DDD;
+  border-radius: 5vw;
+  background-color: #f4f4f4;
+  color: #414141;
+  margin:auto;
+  margin-top: 10vw;
+  font-size: 10vw;
+  padding-left: 5%;
+}
+.standard-button i{
+  padding-top: 5.5vw;
+  text-align: left;
+}
+
+.standard-button span {
+  padding-left: 5%;
+}
+/** ...to here is the css for a standard button **/
+
+
+
+/** From here to ... **/
+
+.header-button {
+  border: .8vw solid #DDD;
+  background-color: #f4f4f4;
+  color: #414141;
+  font-size: 12.8vw;
+  width: 25%;
+  margin: 0%;
+  height: 25vw;
+  float: left;
+  text-align: center;
+}
+.header-button i /**Font Awesome Icons**/ {
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.header-button-label {
+  font-size: 4.27vw;
+}
+/** ... here is the css for a header button **/
+
+/** From here ... **/
+
+
+#wildfire-nav {
+  background-color: #ffbbaa;
+  color: #fafafa;
+  font-size: 2.5vw;
+
+}
+
+
+
+@media (min-width: 769px) {
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        margin:0 auto;
+    }
+
+
+.nav-item {
+        padding-right: 1.5vw;
+}
+
+.navbar-brand.abs
+    {
+      font-size: 3vw;
+    }
+
+.navbar-toggler-icon {
+        width: 7vw;
+        height: 5vh;
+      }
+    #wildfire-nav {
+        padding-bottom: 8vh;
+
+      }
+}
+
+@media (min-width: 1024px) {
+  #wildfire-nav {
+      padding-bottom: 1vh;
+      font-size: 2vw;
+
+
+    }
+}
+
+@media (max-width: 768px) {
+    #collapsingNavbar   {
+
+        padding:5vh;
+    }
+
+    .nav-item {
+        width:85%;
+        height:20vw;
+        border: 1.2vw solid #DDD;
+        border-radius: 4vw;
+        background-color: #f4f4f4;
+        color: #414141;
+        margin: auto;
+        margin-top: 3vh;
+        font-size: 8vw;
+        text-align:center;
+        vertical-align: middle;
+        padding-right: 0;
+        padding-top: 1.5vh;
+      }
+    .nav-item i{
+        padding-top: 5.5vw;
+        text-align: left;
+      }
+
+    .nav-item span {
+        padding-left: 5%;
+      }
+    #username {
+        width:100%;
+        border:0vw;
+        border-radius:0vw;
+        height: 16vw;
+        font-size: 8vw;
+        background-color: rgba(0,0,0,0);
+        color: #414141;
+        margin-top: 1vh;
+    }
+    }
+
+/** ...to here is the css for the wildfire nav **/
+
+/** From here .... **/
+
+
+#reportbuttons {
+      width:90vw;
+      margin:auto;
+}
+
+.report-radio-button {
+  display:none;
+}
+
+.report-label-button {
+  width:20%;
+  height:20vw;
+  color: #414141;
+  background-color: #f4f4f4;
+  font-size: 4vw;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 2vh;
+  cursor: pointer;
+  border: 1vw solid;
+  border-color: #f4f4f4;
+  border-radius: 10%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.report-radio-button:checked + label {
+  background-color:#ffbbaa;
+  border:1vw solid;
+  border-color: #414141;
+  border-radius: 10%;
+
+}
+
+/** ... to here is the css for the report radio buttons **/
+/** This is the general submit button css **/
+.submit-button {
+  margin: auto;
+  width: 40vw;
+  background-color: #f4f4f4
+  color: #414141;
+  padding-top,padding-bottom: 5vh;
+}
+/**End submit css - maybe add hover state later? **/
+
+/** From here ... **/
+
+.wildfire-container {
+  width:90%;
+  margin:auto;
+  background-color:rgba(250,250,250,.60);
+  border-radius:10%;
+  padding:5vw;
+}
+
+/** ... to here is the wildfire content div **/
+  </style>
+</head>
+
+<nav class="navbar navbar-toggleable-md navbar-inverse" id="wildfire-nav">
+  <!--Collapse Toggle Button -->
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+  <!--Centre Content-->
+    <a class="navbar-brand abs" href="#">WF</a>
+  <!--Collapsing Content -->
+    <div class="navbar-collapse collapse" id="collapsingNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item" id="username">User Name</li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">Settings</li>
+            <li class="nav-item">Help</li>
+            <li class="nav-item">About</li>
+            <li class="nav-item">Log Out</li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+<div id="header-buttons">
+
+  <div class="header-button">
+      <i class="fa fa-exclamation-triangle" aria-hidden="true"></i><br>
+      <span class="header-button-label">Overview</span>
+  </div>
+  <div class="header-button">
+      <i class="fa fa-map-marker" aria-hidden="true"></i><br>
+      <span class="header-button-label">Maps</span>
+  </div>
+  <div class="header-button">
+      <i class="fa fa-list" aria-hidden="true"></i><br>
+      <span class="header-button-label">Feeds</span>
+  </div>
+  <div class="header-button">
+      <i class="fa fa-street-view" aria-hidden="true"></i><br>
+      <span class="header-button-label">You</span>
+  </div>
+
+
+  <div class="header-button">
+      <i class="fa fa-user" aria-hidden="true"></i><br>
+      <span class="header-button-label">Family</span>
+  </div>
+  <div class="header-button">
+      <i class="fa fa-users" aria-hidden="true"></i><br>
+      <span class="header-button-label">Community</span>
+  </div>
+  <div class="header-button">
+      <i class="fa fa-home" aria-hidden="true"></i><br>
+      <span class="header-button-label">Locations</span>
+  </div>
+  <div class="header-button">
+      <i class="fa fa-book" aria-hidden="true"></i><br>
+      <span class="header-button-label">Plans</span>
+  </div>
+
+
+  <div class="header-button">
+      <i class="fa fa-list-ol" aria-hidden="true"></i><br>
+      <span class="header-button-label">Prepare</span>
+  </div>
+  <div class="header-button">
+      <i class="fa fa-car" aria-hidden="true"></i><br>
+      <span class="header-button-label">Evacuate</span>
+  </div>
+  <div class="header-button">
+      <i class="fa fa-home" aria-hidden="true"></i><br>
+      <span class="header-button-label">Defend</span>
+  </div>
+  <div class="header-button">
+      <i class="fa fa-arrow-left" aria-hidden="true"></i><br>
+      <span class="header-button-label">Back</span>
+  </div>
+</div>
+
+<br><br><br><br><br><br><br>
+<h1> Hello World </h1>
+
+<h2> Report Buttons </h2>
+<div id="reportbuttons">
+  <form>
+    <section id="what">
+
+      <input type="radio" class="report-radio-button" name="what"  id="Blocked-Road" value="Blocked-Road">
+        <label class="report-label-button" for="Blocked-Road">
+            Blocked Road
+        </label>
+      </input>
+
+      <input type="radio" class="report-radio-button" name="what" id="Car-Accident" value="Car-Accident">
+        <label class="report-label-button" for="Car-Accident">
+          Car Accident
+        </label>
+      </input>
+
+      <input type="radio" class="report-radio-button" name="what"  id="Fire" value="Fire">
+        <label class="report-label-button" for="Fire">
+          Fire
+        </label>
+      </input>
+
+      <input type="radio" class="report-radio-button" name="what" id="Other" value="Other">
+        <label class="report-label-button" for="Other">
+          Other
+        </label>
+      </input>
+    </section>
+
+    <section id="where">
+      <input type="radio" class="report-radio-button" name="where" id="$LOC1" value="$LOC1">
+        <label class="report-label-button" for="$LOC1">
+          $LOCATION1
+        </label>
+      </input>
+      <input type="radio" class="report-radio-button" name="where" id="$LOC2" value="$LOC2">
+        <label class="report-label-button" for="$LOC2">
+          $LOCATION2
+        </label>
+      </input>
+      <input type="radio" class="report-radio-button" name="where" id="$LOC3" value="$LOC3">
+        <label class="report-label-button" for="$LOC3">
+          $LOCATION3
+        </label>
+      </input>
+      <input type="radio" class="report-radio-button" name="where" id="CURRENTLOC" value="CURRENTLOC">
+        <label class="report-label-button" for="CURRENTLOC">
+          Current Location
+        </label>
+      </input>
+    </section>
+
+    <section id="ruok">
+      <input type="radio" class="report-radio-button" name="ruok" id="yes" value="yes">
+        <label class="report-label-button" for="yes">
+          Yes
+        </label>
+      </input>
+      <input type="radio" class="report-radio-button" name="ruok" id="idk" value="idk">
+        <label class="report-label-button" for="idk">
+          I'm Not Sure
+        </label>
+      </input>
+      <input type="radio" class="report-radio-button" name="ruok" id="no" value="no">
+        <label class="report-label-button" for="no">
+          No
+        </label>
+      </input>
+    </section>
+    <input class="submit-button" type="submit"></input>
+  </form>
+</div>
+
+<div class="wildfire-container">
+  <h1> Hello World </h1>
+  <h2> Hello World </h2>
+  <h3> Hello World </h3>
+  <h4> Hello World </h4>
+  <h5> Hello World </h5>
+  <h6> Hello World </h6>
+</div>
+
+</body>
+<!--Boostrap JS-->
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+</html>
