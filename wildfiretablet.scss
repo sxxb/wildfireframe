@@ -32,6 +32,7 @@ body {
   /**End Background**/
 }
 
+/**Semi-Opaque Container for Improving Contrast**/
 .wildfire-container {
   width:90%;
   margin:auto;
@@ -42,7 +43,7 @@ body {
   margin-bottom: 5vh;
 }
 
-/**MOBILE **/
+/**MOBILE**/
 
 .standard-button {
     width:85%;
@@ -77,7 +78,7 @@ body {
   i /**Font Awesome Icons**/ {
     padding-top: 10%;
     padding-bottom: 5%;
-    }
+    } 
   }
   .header-button-label {
   font-size: 4.27vw;
