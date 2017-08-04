@@ -82,6 +82,14 @@ h1,h2,h3,h4,h5,h6 {
   }
 /**end Wildfire Nav**/
 
+#wildfire-nav-bottom {
+  background-color: $darkgrey;
+  font-size: 4vw;
+  font-family: $headerfont;
+  color: $lightgrey;
+  text-align: center;
+  }
+
 #wildfire-header {
   font-family: $headerfont;
   font-size: 16vw;
@@ -92,6 +100,10 @@ h1,h2,h3,h4,h5,h6 {
   margin-left: 24vw;
   margin-right: auto;
   }
+
+.body-container{
+  height:92.6vh;
+}
 
 .wildfire-container {
   width:90%;
@@ -129,18 +141,23 @@ h1,h2,h3,h4,h5,h6 {
   color:$darkgrey;
   font-size:6vh;
   font-family:$bodyfont;
-  padding-top: 5.4vh;
+  padding-top: 4.2vh;
   height:18vh;
   width:80%;
   margin: auto;
   a {
     color: $darkgrey;
+    text-decoration: underline;
+    text-decoration-color: rgba(240, 240, 240, .5);
+    text-decoration-skip: ink;
   }
   .fa-fw {
   width: 24vw;
   }
 }
 
+.header-buttons-container{
+}
 .header-button {
   border: .8vw solid $medgrey;
   background-color: $white;
