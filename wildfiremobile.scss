@@ -14,8 +14,9 @@
   $extreme: rgb(212,139,136);
   $catastrophic: rgb(147,127,163);
 
-  $headerfont:"Europa","Garamond", sans-serif;
+  $headerfont:"Europa","Garamond", serif;
   $bodyfont:"Roboto", sans-serif;
+
 
 body {
   height: 100%;
@@ -44,7 +45,7 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 2.5vw;
   }
 #collapsingNavbar   {
-  padding:3vh;
+  padding:1vh;
   }
 
 .nav-item {
@@ -53,10 +54,13 @@ h1,h2,h3,h4,h5,h6 {
   border-top: .5vw solid $lightgrey;
   color: $lightgrey;
   margin: auto;
-  font-size: 4.5vh;
+  font-size: 8vw;
   text-align:center;
   padding-right: 0;
-  padding-top: 1.8vh;
+  padding-top: 3.5vw;
+  text-decoration: underline;
+  text-decoration-color: rgba(240, 240, 240, .5);
+  text-decoration-skip: ink;
   i {
   padding-top: 5.5vw;
   text-align: left;
@@ -69,13 +73,25 @@ h1,h2,h3,h4,h5,h6 {
   font-family: $headerfont;
   width:100%;
   border:0vw;
-  font-size: 6vh;
+  font-size: 12vw;
   background-color: rgba(0,0,0,0);
   color: $lightgrey;
   margin-top: 1vh;
   padding-top: 0;
+  text-decoration: none;
   }
 /**end Wildfire Nav**/
+
+#wildfire-header {
+  font-family: $headerfont;
+  font-size: 16vw;
+  background-color: rgba(0,0,0,0);
+  color: $darkgrey;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  margin-left: 24vw;
+  margin-right: auto;
+  }
 
 .wildfire-container {
   width:90%;
@@ -88,7 +104,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-.standard-button {
+.standard-button /** Check to see if this is used, otherwise delet**/ {
   width:85%;
   height:25vw;
   border: 1.6vw solid $medgrey;
@@ -105,6 +121,23 @@ h1,h2,h3,h4,h5,h6 {
   }
   span {
   padding-left: 5%;
+  }
+}
+
+.menu-button {
+  border-top:.5vw solid $darkgrey;
+  color:$darkgrey;
+  font-size:6vh;
+  font-family:$bodyfont;
+  padding-top: 5.4vh;
+  height:18vh;
+  width:80%;
+  margin: auto;
+  a {
+    color: $darkgrey;
+  }
+  .fa-fw {
+  width: 24vw;
   }
 }
 
@@ -130,6 +163,9 @@ h1,h2,h3,h4,h5,h6 {
 #reportbuttons {
     width:90%;
     margin:auto;
+  section {
+    margin: auto;
+    }
   }
 .report-radio-button {
   display:none;

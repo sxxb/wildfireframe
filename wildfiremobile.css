@@ -15,7 +15,7 @@ body {
   /**End Background Image**/ }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Europa", "Garamond", sans-serif;
+  font-family: "Europa", "Garamond", serif;
   align-items: center; }
 
 /**Wildfire Nav**/
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2.5vw; }
 
 #collapsingNavbar {
-  padding: 3vh; }
+  padding: 1vh; }
 
 .nav-item {
   width: 85%;
@@ -33,10 +33,13 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 0.5vw solid #f0f0f0;
   color: #f0f0f0;
   margin: auto;
-  font-size: 4.5vh;
+  font-size: 8vw;
   text-align: center;
   padding-right: 0;
-  padding-top: 1.8vh; }
+  padding-top: 3.5vw;
+  text-decoration: underline;
+  text-decoration-color: rgba(240, 240, 240, 0.5);
+  text-decoration-skip: ink; }
   .nav-item i {
     padding-top: 5.5vw;
     text-align: left; }
@@ -44,16 +47,27 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 5%; }
 
 #wildfire-title {
-  font-family: "Europa", "Garamond", sans-serif;
+  font-family: "Europa", "Garamond", serif;
   width: 100%;
   border: 0vw;
-  font-size: 6vh;
+  font-size: 12vw;
   background-color: rgba(0, 0, 0, 0);
   color: #f0f0f0;
   margin-top: 1vh;
-  padding-top: 0; }
+  padding-top: 0;
+  text-decoration: none; }
 
 /**end Wildfire Nav**/
+#wildfire-header {
+  font-family: "Europa", "Garamond", serif;
+  font-size: 16vw;
+  background-color: rgba(0, 0, 0, 0);
+  color: #414141;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  margin-left: 24vw;
+  margin-right: auto; }
+
 .wildfire-container {
   width: 90%;
   margin: auto;
@@ -80,6 +94,21 @@ h1, h2, h3, h4, h5, h6 {
   .standard-button span {
     padding-left: 5%; }
 
+.menu-button {
+  border-top: 0.5vw solid #414141;
+  color: #414141;
+  font-size: 6vh;
+  font-family: "Roboto", sans-serif;
+  padding-top: 5.4vh;
+  height: 18vh;
+  width: 80%;
+  margin: auto;
+  text-align: center; }
+  .menu-button a {
+    color: #414141; }
+  .menu-button .fa-fw {
+    width: 24vw; }
+
 .header-button {
   border: 0.8vw solid #c3c3c3;
   background-color: #fafafa;
@@ -100,6 +129,8 @@ h1, h2, h3, h4, h5, h6 {
 #reportbuttons {
   width: 90%;
   margin: auto; }
+  #reportbuttons section {
+    margin: auto; }
 
 .report-radio-button {
   display: none; }
