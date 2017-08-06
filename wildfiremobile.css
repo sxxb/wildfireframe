@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16vw;
   background-color: rgba(0, 0, 0, 0);
   color: #414141;
-  margin-top: 5vw;
+  padding-top: 5vw;
   margin-bottom: 5vw;
   text-align: center; }
 
