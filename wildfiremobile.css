@@ -116,10 +116,10 @@ h1, h2, h3, h4, h5, h6 {
   .menu-button a {
     color: #414141;
     text-decoration: underline;
-    text-decoration-color: rgba(240, 240, 240, 0.5);
+    text-decoration-color: rgba(65, 65, 65, 0.9);
     text-decoration-skip: ink; }
   .menu-button .fa-fw {
-    width: 24vw; }
+    width: 30vw; }
 
 .header-button {
   border: 0.8vw solid #c3c3c3;
