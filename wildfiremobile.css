@@ -72,8 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #414141;
   margin-top: 5vw;
   margin-bottom: 5vw;
-  margin-left: 24vw;
-  margin-right: auto; }
+  text-align: center; }
 
 .body-container {
   height: 92.6vh; }

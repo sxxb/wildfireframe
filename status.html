@@ -1,40 +1,78 @@
-<DOCTYPE html>
 <html lang ="en">
-<header>
+<!DOCTYPE html>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--TypeKit Fonts-->
+  <script src="https://use.typekit.net/egg0jrm.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+<!--Bootstrap -->
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<!--Font Awesome-->
+  <link href="https://use.fontawesome.com/dfa807e4eb.css" media="all" rel="stylesheet">
+<!--Mobile SS-->
+  <link href="https://sxxb.github.io/wildfireframe/wildfiremobile.css" media="all and (max-width: 767px)" rel="stylesheet">
 
+</head>
+
+
+<body>
+<nav class="navbar navbar-toggleable-md navbar-inverse" id="wildfire-nav">
+    <!--Collapse Toggle Button -->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+    <!--Centre Content-->
+      <a class="navbar-brand abs" href="#">WF</a>
+    <!--Collapsing Content -->
+      <div class="navbar-collapse collapse" id="collapsingNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item" id="wildfire-title">Wildfire</li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">Settings</li>
+              <li class="nav-item">Help</li>
+              <li class="nav-item">About</li>
+              <li class="nav-item">Log Out</li>
+          </ul>
+      </div>
+  </nav>
+<div class="body-container">
+  <div class="header-buttons-container">
+    <button class="header-button">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i><br>
+        <span class="header-button-label">Overview</span>
+    </button >
+    <button class="header-button">
+        <i class="fa fa-map-marker" aria-hidden="true"></i><br>
+        <span class="header-button-label">Maps</span>
+    </button >
+    <button class="header-button">
+        <i class="fa fa-list" aria-hidden="true"></i><br>
+        <span class="header-button-label">Feeds</span>
+    </button >
+    <button class="header-button">
+        <i class="fa fa-street-view" aria-hidden="true"></i><br>
+        <span class="header-button-label">You</span>
+    </button>
+  </div>
+
+  <div id="status-overview">
+    <h1 id="wildfire-header">Overview</h1>
+  </div>
+  <div class=wildfire-container>
+    <p> This should be a brief overview of things like general fire danger, proximate reports, CFS Warnings etc.</p>
+  </div>
+</div>
+<nav class="navbar" id="wildfire-nav-bottom">
+  <span> 2017 - TS - Legal</span>
+</nav>
+</body>
+<!--Boostrap JS-->
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-</header>
-
-<body>
-    <h1>Status</h1>
-        <p>
-        Family List - Locations, Safety etc. <!-- get info from table -->
-        Recent reports  <!-- get info from table -->
-        Location tracking on/off  <!-- get info from table -->
-        Community List(?) <!-- get info from table -->
-        Incidents reported in x days (Last 24h, last 3 days, last week, etc.)  <!-- get info from table -->
-        Current Fire Danger Rating (also notify on home page is above x level  <!-- get info from table -->
-        ~~~This info should be called from a table/tables somewhere in the depths of our database.
-        <br>
-        <br>
-
-        Google Map of Reports
-          - Will require a fair bit of code, using Javascript, JSON, XML, PHP, SQL at least.
-        Map of Sentinel Data
-          - Just embed, or style/overlay?
-        Pager Feed from CFS
-        CFS Incident and Event Map
-          -Embed or style/overlay?
-        Twitter Feed(s)?
-        ABC Emergency Radio Feed?
-
-</body>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+</html>
