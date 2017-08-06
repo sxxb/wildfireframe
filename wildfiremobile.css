@@ -1,7 +1,7 @@
 /** wildfiremobile.scss **/
 body {
   height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto", sans-serif;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -15,7 +15,7 @@ body {
   /**End Background Image**/ }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Europa", "Garamond", serif;
+  font-family: "europa", serif;
   align-items: center; }
 
 /**Wildfire Nav**/
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 5%; }
 
 #wildfire-title {
-  font-family: "Europa", "Garamond", serif;
+  font-family: "europa", serif;
   width: 100%;
   border: 0vw;
   font-size: 12vw;
@@ -61,12 +61,12 @@ h1, h2, h3, h4, h5, h6 {
 #wildfire-nav-bottom {
   background-color: #414141;
   font-size: 4vw;
-  font-family: "Europa", "Garamond", serif;
+  font-family: "europa", serif;
   color: #f0f0f0;
   text-align: center; }
 
 #wildfire-header {
-  font-family: "Europa", "Garamond", serif;
+  font-family: "europa", serif;
   font-size: 16vw;
   background-color: rgba(0, 0, 0, 0);
   color: #414141;
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 0.5vw solid #414141;
   color: #414141;
   font-size: 6vh;
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto", sans-serif;
   padding-top: 4.2vh;
   height: 18vh;
   width: 80%;
