@@ -3,6 +3,7 @@
   $wildfireorange: rgb(235,185,171);
   $wildfireblue: rgb(198,235,234);
   $darkgrey: rgb(65,65,65);
+  $darkgreysemi: rgba(65,65,65,.3);
   $medgrey: rgb(195,195,195);
   $lightgrey: rgb(240,240,240);
   $white: rgb(250,250,250);
@@ -95,9 +96,10 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 16vw;
   background-color: rgba(0,0,0,0);
   color: $darkgrey;
-  padding-top:5vw;
+  margin-top: 5vw;
   margin-bottom: 5vw;
   text-align: center;
+  line-height: 1.5
   }
 
 .body-container{
@@ -112,6 +114,46 @@ h1,h2,h3,h4,h5,h6 {
   padding:5vw;
   margin-top: 5vh;
   margin-bottom: 5vh;
+  -webkit-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  -moz-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  box-shadow: 0px -1px 10px -2px $darkgreysemi;
+}
+
+.wildfire-container-map {
+  width:90%;
+  margin:auto;
+  background-color:$high;
+  border-radius:3vh;
+  margin-top: 16vh;
+  -webkit-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  -moz-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  height:40vh;
+}
+
+.wildfire-container-map-options {
+  width:90%;
+  margin:auto;
+  background-color:rgba(250,250,250,.60);
+  border-radius:3vh;
+  padding:5vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  -webkit-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  -moz-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  box-shadow: 0px -1px 10px -2px $darkgreysemi;
+}
+
+.wildfire-container-feeds {
+  width:90%;
+  margin:auto;
+  background-color:$high;
+  border-radius:3vh;
+  margin-top: 2vh;
+  -webkit-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  -moz-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  height:50vh;
 }
 
 

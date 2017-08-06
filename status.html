@@ -12,7 +12,7 @@
 <!--Font Awesome-->
   <link href="https://use.fontawesome.com/dfa807e4eb.css" media="all" rel="stylesheet">
 <!--Mobile SS-->
-  <link href="https://sxxb.github.io/wildfireframe/wildfiremobile.css" media="all and (max-width: 767px)" rel="stylesheet">
+  <link href="/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/wildfiremobile.css" media="all and (max-width: 767px)" rel="stylesheet">
 
 </head>
 
@@ -38,8 +38,7 @@
           </ul>
       </div>
   </nav>
-<div class="body-container">
-  <div class="header-buttons-container">
+<div class="header-buttons-container">
     <button class="header-button">
         <i class="fa fa-exclamation-triangle" aria-hidden="true"></i><br>
         <span class="header-button-label">Overview</span>
@@ -56,13 +55,59 @@
         <i class="fa fa-street-view" aria-hidden="true"></i><br>
         <span class="header-button-label">You</span>
     </button>
-  </div>
+</div>
 
+<div class="body-container">
   <div id="status-overview">
     <h1 id="wildfire-header">Overview</h1>
   </div>
   <div class=wildfire-container>
-    <p> This should be a brief overview of things like general fire danger, proximate reports, CFS Warnings etc.</p>
+    <p>This should be a brief overview of things like general fire danger, proximate reports, CFS Warnings etc.</p>
+    <p>The current Fire Danger Rating is $DANGER</p>
+    <p>There are $x CFS Warnings for your region</p>
+    <p>There are $x reports of hazards within $x km of you</p>
+  </div>
+</div>
+
+<div class="body-container">
+  <div class=wildfire-container-map>
+    <p>PLACEHOLDER FOR MAP</p>
+  </div>
+  <div class=wildfire-container-map-options>
+    <h4>Map Options</h4>
+    <form>
+      <input type="checkbox" id="User-Reports" value="User-Reports">
+        <label for="User-Reports">User Reports</label>
+      </input>
+    <br>
+      <input type="checkbox" id="CFS-Reports" value="CFS-Reports">
+        <label for="CFS-Reports">CFS Reports</label>
+      </input>
+    <br>
+      <input type="checkbox" id="Sentinel-Satellite" value="Sentinel-Satellite">
+        <label for="Sentinel-Satellite">Sentinel Satellite Map</label>
+      </input>
+  </div>
+</div>
+
+<div class="body-container">
+  <div id="status-overview">
+    <h1 id="wildfire-header">Feeds</h1>
+  </div>
+  <div class=wildfire-container-feeds>
+    Feeds Placeholder
+  </div>
+</div>
+
+<div class="body-container">
+  <div id="status-overview">
+    <h1 id="wildfire-header">You</h1>
+  </div>
+  <div class=wildfire-container>
+    <p>This should be user specific information like their safety marking, family member safety etc.</p>
+    <p>You are currently marked as $SAFETY</p>
+    <p>There are no family members marked as unsafe.</p>
+    <p>None of your family members are within $km of a hazard</p>
   </div>
 </div>
 <nav class="navbar" id="wildfire-nav-bottom">
