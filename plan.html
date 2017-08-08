@@ -1,193 +1,107 @@
-<DOCTYPE html>
 <html lang ="en">
-<header>
+<!DOCTYPE html>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--TypeKit Fonts-->
+  <script src="https://use.typekit.net/egg0jrm.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+<!--Bootstrap -->
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<!--Font Awesome-->
+  <link href="https://use.fontawesome.com/dfa807e4eb.css" media="all" rel="stylesheet">
+<!--Mobile SS-->
+  <link href="/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/wildfiremobile.css" media="all and (max-width: 767px)" rel="stylesheet">
 
+</head>
+
+
+<body>
+<nav class="navbar navbar-toggleable-md navbar-inverse" id="wildfire-nav">
+    <!--Collapse Toggle Button -->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+    <!--Centre Content-->
+      <a class="navbar-brand abs" href="#">WF</a>
+    <!--Collapsing Content -->
+      <div class="navbar-collapse collapse" id="collapsingNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item" id="wildfire-title">Wildfire</li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">Settings</li>
+              <li class="nav-item">Help</li>
+              <li class="nav-item">About</li>
+              <li class="nav-item">Log Out</li>
+          </ul>
+      </div>
+  </nav>
+<div class="header-buttons-container">
+    <button class="header-button">
+        <i class="fa fa-user" aria-hidden="true"></i><br>
+        <span class="header-button-label">Family</span>
+    </button>
+    <button class="header-button">
+        <i class="fa fa-users" aria-hidden="true"></i><br>
+        <span class="header-button-label">Community</span>
+    </button>
+    <button class="header-button">
+        <i class="fa fa-home" aria-hidden="true"></i><br>
+        <span class="header-button-label">Locations</span>
+    </button>
+    <button class="header-button">
+        <i class="fa fa-book" aria-hidden="true"></i><br>
+        <span class="header-button-label">Plans</span>
+    </button>
+  </div>
+
+<div class="body-container">
+  <div id="status-overview">
+    <h1 id="wildfire-header">Family</h1>
+  </div>
+  <div class=wildfire-container>
+    <p>This should be an editable form kinda input for adding, editing and viewing family information and connecting with family members via Wildfire.</p>
+  </div>
+</div>
+
+<div class="body-container">
+  <div id="status-overview">
+    <h1 id="wildfire-header">Community</h1>
+  </div>
+  <div class=wildfire-container>
+    <p>This will be for more community based features - choosing a council area/bushfire warning area, viewing/contributing evacuation points etc.</p>
+  </div>
+</div>
+
+<div class="body-container">
+  <div id="status-overview">
+    <h1 id="wildfire-header">Locations</h1>
+  </div>
+  <div class=wildfire-container>
+    <p>This could be done a few ways - a map with pins for saved locations, a search + list system for saved locations, a mix of both.</p>
+  </div>
+
+</div>
+
+<div class="body-container">
+  <div id="status-overview">
+    <h1 id="wildfire-header">Plans</h1>
+  </div>
+  <div class=wildfire-container>
+    <p>This will have subtabs, probably will lead to a new 'page' with 3 tab buttons and a back button. This will house the 3 plans people will need - preparation for bushfire season, evacuate in a fire, defend their property. We should probably have links to how to prepare these plans effectively, but unsure of implementation.</p>
+  </div>
+</div>
+
+<nav class="navbar" id="wildfire-nav-bottom">
+  <span> 2017 - TS - Legal</span>
+</nav>
+</body>
+<!--Boostrap JS-->
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <style>
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-  @import url('https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css');
-
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  font: 14px/1 'Open Sans', sans-serif;
-  color: #555;
-  background: #eee;
-}
-
-h1 {
-  font: 'Numans', sans-serif;
-  padding: 50px 0;
-  font-weight: 400;
-  text-align: center;
-}
-
-p {
-  margin: 0 0 20px;
-  line-height: 1.5;
-}
-
-main {
-  min-width: 320px;
-  max-width: 1100px;
-  padding: 50px;
-  margin: 0 auto;
-  background: #fff;
-}
-
-section {
-  display: none;
-  padding: 20px 0 0;
-  border-top: 1px solid #ddd;
-}
-
-input {
-  display: none;
-}
-
-label {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 15px 25px;
-  font-weight: 600;
-  text-align: center;
-  color: #bbb;
-  border: 1px solid transparent;
-}
-
-label:before {
-  font-family: fontawesome;
-  font-weight: normal;
-}
-
-label[for*='1']:before { content: '\f1ae'; }
-label[for*='2']:before { content: '\f095'; }
-label[for*='3']:before { content: '\f015'; }
-label[for*='4']:before { content: '\f02d'; }
-label[for*='5']:before { content: '\f1b9'; }
-label[for*='6']:before { content: '\f134'; }
-
-label:hover {
-  color: #555;
-  cursor: pointer;
-}
-
-input:checked + label {
-  color: #555;
-  border: 1px solid #ddd;
-  border-top: 2px solid #71dad7;
-  border-bottom: 1px solid #fff;
-}
-
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4,
-#tab5:checked ~ #content5,
-#tab6:checked ~ #content6
- {
-  display: block;
-}
-
-@media screen and (max-width: 650px) {
-  label {
-    font-size: 0;
-  }
-  label:before {
-    margin: 0;
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  label {
-    padding: 15px;
-  }
-}
-
-#centrecontent {
-  margin:auto;
-}
-  </style>
-</header>
-
-<body>
-  <h1>Plan and Prepare</h1>
-
-  <main>
-    <div class="centrecontent">
-    <input id="tab1" type="radio" name="tabs" checked>
-    <label for="tab1"> Family</label>
-
-    <input id="tab2" type="radio" name="tabs">
-    <label for="tab2"> Contacts</label>
-
-    <input id="tab3" type="radio" name="tabs">
-    <label for="tab3"> Locations</label>
-
-    <input id="tab4" type="radio" name="tabs">
-    <label for="tab4"> Fire Preparation</label>
-
-    <input id="tab5" type="radio" name="tabs">
-    <label for="tab5"> Evacuation Plan</label>
-
-    <input id="tab6" type="radio" name="tabs">
-    <label for="tab6"> Stay and Defend Plan</label>
-
-    <section id="content1">
-      <p>
-        In here, should be family members accounts - linked by a table with userIDs (unique). This is not necessarily reciprocal. Should we have a search function to find a user?
-      </p>
-      <p>
-        There should also be options to notify these people in case of a report, and whether they wish to share their location with them.
-      </p>
-    </section>
-
-    <section id="content2">
-      <p>
-        This section could possibly be connected with family - otherwise it will contain names, phone numbers and options to contact in emergencies. Maybe useful for people who don't have the app
-      </p>
-    </section>
-
-    <section id="content3">
-      <p>
-        Here should be a map plugin for saving locations (with search?), as well as a list of saved locations. Possibly some method of linking contacts/family to saved locations? There is a google API for converting addresses into coordinates.
-      </p>
-    </section>
-
-    <section id="content4">
-      <p>
-        Here just requires a simple editable text box, with some sort of small tutorial for things to consider (e.g. Common things people write in here are "clean the gutters, clear fallen trees, fill the water tank etc.")
-        The text should send to a table for the user upon submitting.
-      </p>
-    </section>
-    <section id="content5">
-      <p>
-        Here requires a simple editable text box as in fire prep, with suggestions and sending to a table method again.
-      </p>
-    </section>
-    <section id="content6">
-      <p>
-        Here requires a simple editable text box as in fire prep, with suggestions and sending to a table method again. Perhaps include a warning of the dangers of staying and defending if you're unprepared?
-      </p>
-    </section>
-  </div>
-  </main>
-</body>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+</html>
