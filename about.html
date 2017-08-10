@@ -1,21 +1,47 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang ="en">
-<header>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--TypeKit Fonts-->
+  <script src="https://use.typekit.net/egg0jrm.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+<!--Bootstrap -->
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-</header>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<!--Font Awesome-->
+  <link href="https://use.fontawesome.com/dfa807e4eb.css" media="all" rel="stylesheet">
+<!--Mobile SS-->
+  <link href="/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/wildfiremobile.css" media="all and (max-width: 767px)" rel="stylesheet">
+  <link href="/wildfireframe/wildfiremobile.css" media="all and (max-width: 767px" rel="stylesheet">
+</head>
 
 <body>
-<h1>About</h1>
+
+<nav class="navbar navbar-toggleable-md navbar-inverse" id="wildfire-nav">
+      <!--Collapse Toggle Button -->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      <!--Centre Content-->
+        <a class="navbar-brand abs" href="/wildfireframe/">WF</a>
+      <!--Collapsing Content -->
+        <div class="navbar-collapse collapse" id="collapsingNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item" id="wildfire-title">Wildfire</li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">Settings</li>
+                <li class="nav-item">Help</li>
+                <li class="nav-item">About</li>
+                <li class="nav-item">Log Out</li>
+            </ul>
+        </div>
+    </nav>
+
+<div><h1 id="wildfire-header"x>About</h1></div>
+
+<div class="wildfire-container-about">
 <p>
 Wildfire is a web and mobile app that helps you stay safe during Bushfire Season. Wildfire collates important information in one place for you, so you can make important decisions quickly. Wildfire can also keep track of your bushfire preparation and evacuation plans, so you know where to find them when you need them.
 It is our hope that Wildfire can make a real difference for people living in bushfire prone areas, by making everything from preparing, to monitoring, to evactuating or defending as simple as possible, so you can take action.
@@ -24,4 +50,15 @@ Trentoscott is a team of two - Trent and Scott - from Adelaide, South Australia.
 <br><br>
 Wildfire and/or Trentoscott assume no liability for the safety of the user. This is a tool to provide information in the hope that it will allow users to make informed decisions in moments of danger, and we provide no recommended course of action. If you are in immediate danger please call 000.
 </p>
+</div>
+
+<nav class="navbar" id="wildfire-nav-bottom">
+  <span> 2017 - TS - Legal</span>
+</nav>
+<!--Boostrap JS-->
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 </body>
