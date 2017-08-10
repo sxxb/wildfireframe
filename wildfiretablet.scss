@@ -1,9 +1,9 @@
 /** wildfiremobile.scss **/
 
-/** Variables **/
   $wildfireorange: rgb(235,185,171);
   $wildfireblue: rgb(198,235,234);
   $darkgrey: rgb(65,65,65);
+  $darkgreysemi: rgba(65,65,65,.3);
   $medgrey: rgb(195,195,195);
   $lightgrey: rgb(240,240,240);
   $white: rgb(250,250,250);
@@ -15,112 +15,296 @@
   $extreme: rgb(212,139,136);
   $catastrophic: rgb(147,127,163);
 
-  $headerfont:"Europa","Garamond", sans-serif;
-  $bodyfont:"Roboto", sans-serif;
+  $headerfont:"europa", serif;
+  $bodyfont: sans-serif;
+
 
 body {
   height: 100%;
   font-family: $bodyfont;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   /**Background Image**/
-    background-image: url(/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/Wildfire-Background-Test.svg);
+    background-image: url(/wildfireframe/Wildfire-Background-Test.svg), url(/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/Wildfire-Background-Test.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: $moderate;
+    background-color: $severe;
     background-blend-mode:overlay;
-  /**End Background**/
+  /**End Background Image**/
 }
 
-/**Semi-Opaque Container for Improving Contrast**/
+h1,h2,h3,h4,h5,h6 {
+  font-family: $headerfont;
+  align-items: center;
+}
+
+/**Wildfire Nav**/
+#wildfire-nav {
+  background-color: $severe;
+  color: $white;
+  font-size: 2.5vw;
+  -webkit-box-shadow: 0px 1px 10px -2px $darkgreysemi;
+  -moz-box-shadow: 0px 1px 10px -2px $darkgreysemi;
+  box-shadow: 0px 1px 10px -2px $darkgreysemi;
+  }
+#collapsingNavbar   {
+  padding:1vh;
+  }
+
+.nav-item {
+  width:85%;
+  height:20vw;
+  border-top: .5vw solid $lightgrey;
+  color: $lightgrey;
+  margin: auto;
+  font-size: 8vw;
+  text-align:center;
+  padding-right: 0;
+  padding-top: 3.5vw;
+  text-decoration: underline;
+  text-decoration-color: rgba(240, 240, 240, .5);
+  text-decoration-skip: ink;
+  i {
+  padding-top: 5.5vw;
+  text-align: left;
+  }
+  span {
+  padding-left: 5%;
+  }
+}
+#wildfire-title {
+  font-family: $headerfont;
+  width:100%;
+  border:0vw;
+  font-size: 12vw;
+  background-color: rgba(0,0,0,0);
+  color: $lightgrey;
+  margin-top: 1vh;
+  padding-top: 0;
+  text-decoration: none;
+  }
+/**end Wildfire Nav**/
+
+#wildfire-nav-bottom {
+  background-color: $darkgrey;
+  font-size: 4vw;
+  font-family: $headerfont;
+  color: $lightgrey;
+  text-align: center;
+  }
+
+#wildfire-header {
+  font-family: $headerfont;
+  font-size: 12vw;
+  background-color: rgba(0,0,0,0);
+  color: $darkgrey;
+  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
+  text-align: center;
+  line-height: 1.5
+  }
+
+#status-overview {
+  padding-top: 14vh;
+}
+
+.body-container{
+  height:93vh;
+}
+
 .wildfire-container {
+  width:90%;
+  height:55vh;
+  margin:auto;
+  background-color:rgba(250,250,250,.60);
+  border-radius:3vh;
+  padding:5vw;
+  margin-bottom: 5vh;
+  -webkit-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  -moz-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  overflow: auto;
+}
+
+.wildfire-container-with-link {
+  width:90%;
+  height:45vh;
+  margin:auto;
+  background-color:rgba(250,250,250,.60);
+  border-radius:3vh;
+  padding:5vw;
+  margin-bottom: 5vh;
+  -webkit-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  -moz-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  box-shadow: 0px -1px 10px -2px $darkgreysemi;
+}
+.wildfire-container-map {
+  width:90%;
+  margin:auto;
+  background-color:$high;
+  border-radius:3vh;
+  margin-top: 16vh;
+  -webkit-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  -moz-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  height:40vh;
+}
+
+.wildfire-container-map-options {
   width:90%;
   margin:auto;
   background-color:rgba(250,250,250,.60);
-  border-radius:10%;
+  border-radius:3vh;
   padding:5vw;
-  margin-top: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  -webkit-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  -moz-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  box-shadow: 0px -1px 10px -2px $darkgreysemi;
+}
+
+.wildfire-container-feeds {
+  width:90%;
+  margin:auto;
+  background-color:$high;
+  border-radius:3vh;
+  margin-top: 2vh;
+  -webkit-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  -moz-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  height:50vh;
+}
+
+.wildfire-container-about{
+  width:90%;
+  margin:auto;
+  background-color:rgba(250,250,250,.60);
+  border-radius:3vh;
+  padding:5vw;
   margin-bottom: 5vh;
+  -webkit-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  -moz-box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  box-shadow: 0px -1px 10px -2px $darkgreysemi;
+  overflow: auto;
 }
 
-/**MOBILE**/
-
-.standard-button {
-    width:85%;
-    height:25vw;
-    border: 1.6vw solid $medgrey;
-    border-radius: 5vw;
-    background-color: $white;
-    color: $darkgrey;
-    margin:auto;
-    margin-top: 10vw;
-    font-size: 10vw;
-    padding-left: 5%;
+.standard-button /** Check to see if this is used, otherwise delet**/ {
+  width:85%;
+  height:25vw;
+  border: 1.6vw solid $medgrey;
+  border-radius: 5vw;
+  background-color: $white;
+  color: $darkgrey;
+  margin:auto;
+  margin-top: 10vw;
+  font-size: 10vw;
+  padding-left: 5%;
   i {
-    padding-top: 5.5vw;
-    text-align: left;
-    }
+  padding-top: 5.5vw;
+  text-align: left;
+  }
   span {
-    padding-left: 5%;
-    }
+  padding-left: 5%;
+  }
 }
+
+.menu-button {
+  border-top:.5vw solid $darkgrey;
+  color:$darkgrey;
+  font-size:6vh;
+  font-family:$bodyfont;
+  padding-top: 4.2vh;
+  height:18vh;
+  width:60%;
+  margin: auto;
+
+  a {
+    color: $darkgrey;
+    text-decoration: underline;
+    text-decoration-color: rgba(65,65,65,.9);
+    text-decoration-skip: ink;
+  }
+  .fa-fw {
+    width: 30vw;
+  }
+}
+
+.header-buttons-container{
+}
+
 
 .header-button {
-    border: .8vw solid $medgrey;
-    background-color: $white;
-    color: $darkgrey;
-    font-size: 12.8vw;
-    width: 25%;
-    margin: 0%;
-    height: 25vw;
-    float: left;
-    text-align: center;
+  border: .8vw solid $medgrey;
+  background-color: $white;
+  color: $darkgrey;
+  font-size: 12.8vw;
+  width: 25%;
+  margin: 0;
+  height: 25vw;
+  text-align: center;
+  float: left;
   i /**Font Awesome Icons**/ {
-    padding-top: 10%;
-    padding-bottom: 5%;
-    } 
+  padding-top: 10%;
+  padding-bottom: 5%;
   }
-  .header-button-label {
+}
+.header-button-label {
   font-size: 4.27vw;
 }
 
 #reportbuttons {
     width:90%;
     margin:auto;
+  section {
+    margin: auto;
+    }
   }
-  .report-radio-button {
-    display:none;
+.report-radio-button {
+  display:none;
   }
-  .report-label-button {
-    width:20%;
-    height:20vw;
-    color: $darkgrey;
-    background-color: $white;
-    font-size: 4vw;
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 2vh;
-    cursor: pointer;
-    border: 1vw solid;
-    border-color: $white;
-    border-radius: 10%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+.report-label-button {
+  width:20%;
+  height:20vw;
+  color: $darkgrey;
+  background-color: $white;
+  font-size: 4vw;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 2vh;
+  cursor: pointer;
+  border: 1vw solid;
+  border-color: $white;
+  border-radius: 10%;
   }
-  .report-radio-button:checked + label {
-    background-color:$wildfireorange;
-    border:1vw solid;
-    border-color: $darkgrey;
-    border-radius: 10%;
+.report-radio-button:checked + label {
+  background-color:$severe;
+  border:1vw solid;
+  border-color: $darkgrey;
+  border-radius: 10%;
   }
 
 .submit-button {
   margin:auto;
   width:40vw;
+  height:10vh;
   font-size: 5vh;
   background-color: $white;
   color: $darkgrey;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.body-link {
+  color: $darkgrey;
+  text-decoration: underline;
+  text-decoration-color: rgba(65,65,65,.9);
+  text-decoration-skip: ink;
+}
+
+.body-link-container {
+  margin: auto;
+  width: 90%;
+  text-align: center;
 }
