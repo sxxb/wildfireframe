@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
+<style>
 
-  body {
+body {
     margin: 0;
+    box-sizing: border-box;
   }
 
-  @media (min-width:0px) {
+@media (min-width:0px) {
     .wrapper {
       width: 100vw;
       height: 100vh;
@@ -30,16 +31,24 @@
       grid-template-areas: "h-logo ... h-menu";
       display: grid;
     }
+      .h-menu-mobile {
+          display: grid;
+          text-align: right;
+        }
+
+      .h-menu {
+          display: none;
+        }
 
     .nav {
       height:80vh;
       display: none;
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-areas:
-      "n-one"
-      "n-two"
-      "n-three"
-      "n-four"
+          "n-one"
+          "n-two"
+          "n-three"
+          "n-four"
     }
     .n {
       padding-top: 1vh;
@@ -49,6 +58,9 @@
       height:15vh;
       display: grid;
     }
+        .bu {
+          padding-top:2vh;
+          }
 
     .body {
       height:75vh;
@@ -61,19 +73,9 @@
       height:10vh;
       display: grid;
     }
-
-    .h-menu-mobile {
-          display: grid;
-          text-align: right;
-        }
-
-    .h-menu {
-          display: none;
-        }
-
   }
 
-  @media (min-width:500px) {
+@media (min-width:750px) {
 
       .wrapper {
             width: 100vw;
@@ -110,6 +112,9 @@
             height:10vh;
             display: grid;
           }
+          .bu {
+          padding-top:1vh;
+          }
 
       .body {
             height:70vh;
@@ -132,7 +137,7 @@
           }
     }
 
-  @media (min-width:1000px) {
+@media (min-width:1000px) {
 
       .wrapper {
             width: 100vw;
@@ -164,6 +169,11 @@
                 }
                 .n {
                   padding-top: 7vh;
+                  border-bottom: 2px solid #414141;
+                }
+
+                .n-last {
+                  border-bottom: 0 solid black;
                 }
 
         .buttons {
@@ -192,7 +202,7 @@
                     }
           }
 
-  @media (min-width:2000px) {
+@media (min-width:2000px) {
 
               .wrapper {
                     width: 100vw;
@@ -224,7 +234,13 @@
                         }
                         .n {
                           padding-top: 7vh;
+                          border-bottom: 2px solid #414141;
                         }
+
+                        .n-last {
+                          border-bottom: 0 solid black;
+                        }
+
 
                 .buttons {
                           height:10vh;
@@ -251,10 +267,14 @@
                         }
                   }
 
-  .header {
+.header {
       grid-area: header;
       background-color:#ffa163;
       text-align: center;
+      box-shadow: 1px 0px 10px rgba(65,65,65,0.2);
+      -webkit-box-shadow: 1px 0px 10px rgba(65,65,65,0.2);
+      -moz-box-shadow: 1px 0px 10px rgba(65,65,65,0.2);
+      z-index: 2;
 
     }
       .h-logo {
@@ -265,18 +285,19 @@
       .h-menu-mobile {
         grid-area: h-menu;
         padding-top: 1vh;
+        padding-right: 5vw;
       }
 
       .h-menu {
         grid-area: h-menu;
-        padding-top: 1vh;
         text-align: right;
       }
 
-  .nav {
+.nav {
       grid-area: nav;
       background-color:#ccc;
       text-align: center;
+
     }
       .n-one {
         grid-area:n-one;
@@ -290,15 +311,20 @@
       .n-four {
         grid-area:n-four;
       }
+      .n {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-  .buttons {
+.buttons {
       grid-area: buttons;
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-areas: "bu-one bu-two bu-three bu-four";
       background-color:#ddd;
       text-align: center;
     }
-      }
+
       .bu-one {
       grid-area:bu-one;
     }
@@ -312,9 +338,10 @@
       grid-area:bu-four;
     }
 
-  .body {
+.body {
       grid-area: body;
       background-color:#eee;
+      z-index: 1
     }
       .bo-one {
         grid-area: bo-one;
@@ -325,13 +352,20 @@
         background-color: #e8e8e8;
       }
 
-  .footer {
+.footer {
       grid-area: footer;
-      background-color:#444;
+      background-color:#414141;
       text-align: center;
+      color: #ffa163;
+      box-shadow: 0px -5px 10px rgba(65,65,65,0.2);
+      -webkit-box-shadow: 0px -5px 10px rgba(65,65,65,0.2);
+      -moz-box-shadow: 0px -5px 10px rgba(65,65,65,0.2);
+      z-index: 2;
     }
 
   </style>
+
+</style>
 </head>
 
 <body>
@@ -345,18 +379,20 @@
     <div class="n n-one">report</div>
     <div class="n n-two">status</div>
     <div class="n n-three">prepare</div>
-    <div class="n n-four">learn</div>
+    <div class="n n-last n-four">learn</div>
   </div>
   <div class="buttons">
-    <div class="bu-one">one</div>
-    <div class="bu-two">two</div>
-    <div class="bu-three">three</div>
-    <div class="bu-four">four</div>
+    <div class="bu bu-one">one</div>
+    <div class="bu bu-two">two</div>
+    <div class="bu bu-three">three</div>
+    <div class="bu bu-four">four</div>
   </div>
   <div class="body">
     <div class="bo-one">one</div>
     <div class="bo-two">two</div>
   </div>
-  <div class="footer">footer</div>
+  <div class="footer">
+    2017c ~ TS ~ Legal
+  </div>
 </div>
 </body>
