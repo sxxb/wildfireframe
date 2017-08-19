@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+
+  body {
+    margin: 0;
+  }
+    .wrapper {
+      width: 100vw;
+      height: 100vh;
+      display:grid;
+      grid-template-columns: 100vw;
+      grid-template-areas:
+        "header"
+        "buttons"
+        "nav"
+        "body"
+        "footer"  ;
+      font-size: 6vh;
+    }
+    .header {
+      height:10vh;
+      display: grid;
+    }
+
+    .nav {
+      height:80vh;
+      display: none;
+    }
+
+    .buttons {
+      height:10vh;
+      display: grid;
+    }
+
+    .body {
+      height:80vh;
+      display: grid;
+    }
+
+    .footer {
+      height:10vh;
+      display: grid;
+    }
+
+    @media (min-width:500px) {
+
+      .wrapper {
+            width: 100vw;
+            height: 100vh;
+            display:grid;
+            grid-template-columns: 100vw;
+            grid-template-areas:
+              "header"
+              "buttons"
+              "nav"
+              "body"
+              "footer"  ;
+          }
+
+      .header {
+            height:10vh;
+            display: grid;
+      }
+
+      .nav {
+            height:45vh;
+            display: none;
+          }
+
+      .buttons {
+            height:10vh;
+            display: grid;
+          }
+
+      .body {
+            height:80vh;
+            display: grid;
+          }
+
+      .footer {
+            height:10vh;
+            display: grid;
+          }
+    }
+
+    @media (min-width:1000px) {
+
+      .wrapper {
+            width: 100vw;
+            height: 100vh;
+            display:grid;
+            grid-template-columns: 20vw 80vw;
+            grid-template-areas:
+              "header header"
+              "nav buttons"
+              "nav body"
+              "footer footer"  ;
+            }
+        .header {
+                  height:10vh;
+                  display: grid;
+            }
+
+        .nav {
+                  height:90vh;
+                  display: grid;
+                }
+
+        .buttons {
+                  height:10vh;
+                  display: grid;
+                }
+
+        .body {
+                  height:80vh;
+                  display: grid;
+                }
+
+        .footer {
+                  height:10vh;
+                  display: grid;
+                }
+          }
+
+    .header {
+      grid-area: header;
+      background-color:red;
+    }
+
+    .nav {
+      grid-area: nav;
+      background-color:orange;
+    }
+
+    .buttons {
+      grid-area: buttons;
+      background-color:yellow;
+    }
+
+    .body {
+      grid-area: body;
+      background-color:green;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color:blue;
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="header">header</div>
+  <div class="nav">nav</div>
+  <div class="buttons">buttons</div>
+  <div class="body">body</div>
+  <div class="footer">footer</div>
+</div>
+</body>
